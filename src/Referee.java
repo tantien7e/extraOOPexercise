@@ -82,9 +82,9 @@ public class Referee {
         printContinue(iteration);
         System.out.print("The winner is: ");
         for(int i =0; i<wonPlayer.size(); i++) {
-            System.out.print(wonPlayer.get(i).getPlayerName());
-            System.out.println();
+            System.out.print(wonPlayer.get(i).getPlayerName()+ " ");
         }
+        System.out.println();
         for(int i = 0; i<numVirtualPlayers; i++){
             if(!wonPlayer.contains(listVirtualPlayers.get(i))){
                 System.out.println(listVirtualPlayers.get(i).getPlayerName() + ": "+ listVirtualPlayers.get(i).displayMessage());
